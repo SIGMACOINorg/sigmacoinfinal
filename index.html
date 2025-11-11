@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$SIGMACOIN</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="title">$SIGMACOIN</h1>
+  </header>
+
+  <!-- COIN HERO SECTION -->
+  <section class="coin-hero">
+    <div class="coin-container">
+      <img src="images/new logo black background.png" alt="$SIGMACOIN 4K Coin" class="coin-img" />
+      <div class="coin-glow"></div>
+    </div>
+    <div class="coin-intro">
+      <h2>$SIGMACOIN</h2>
+      <p>
+        Built to serve.
+
+
+
+      </p>
+      <div class="coin-buttons">
+        <a href="https://pump.fun/coin/" 
+           target="_blank" class="buy-btn">
+           Buy $SIGMACOIN
+        </a>
+
+        <button id="copyBtn" 
+                data-address="" 
+                class="copy-btn">
+                Copy Contract
+        </button>
+
+        <!-- X COMMUNITY BUTTON -->
+        <a href="https://x.com/sigmacoinonsol" 
+           target="_blank" 
+           class="x-community-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" class="x-logo">
+             <path fill="#000" d="M714.2 519.2L1179.9 0H1071.5L667.9 450.9L357.3 0H0L485.1 700.4L0 1226.6H108.4L531.1 751.2L864.6 1226.6H1200M147.7 79.7H316.5L1071.1 1148.1H902.3"/>
+           </svg>
+           
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>What is $SIGMACOIN?</h2>
+    <p>
+     
+
+Distributed trade commerce ecosystem for the distributed future. Sigmacoin connects
+exceptional startups, exporters/imposters and investors. Sigmacoin managed by eminent
+entrepreneurs focusing on carefully-selected trade and commerce projects. Sigmacoin is the
+disruptive power of the blockchain translating logic ino successful business models
+
+    </p>
+  </section>
+
+  <section class="gallery">
+    <h2>The Sigma Spirit</h2>
+    <div class="images">
+      <img src="images/Image1.png" alt="Sigma Image 1" />
+      <img src="images/image2.png" alt="Sigma Image 2" />
+      <img src="images/Image3.png" alt="Sigma Image 3" />
+    </div>
+  </section>
+
+  <section class="tokenomics-section">
+    <div class="tokenomics">
+      <h2>TOKENOMICS</h2>
+      <ul>
+        <li><span>TOTAL SUPPLY:</span> 1 BILLION</li>
+        <li><span>LAUNCH TYPE:</span> FAIR</li>
+        <li><span>LP STATUS:</span> LOCKED</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 $SIGMACOIN | ALL RIGHTS RESERVED</p>
+  </footer>
+
+  <script>
+    document.getElementById('copyBtn').addEventListener('click', async (e) => {
+      const address = e.target.dataset.address || '';
+      try {
+        await navigator.clipboard.writeText(address);
+        e.target.textContent = 'Copied!';
+        setTimeout(() => e.target.textContent = 'Copy Contract', 2000);
+      } catch (err) {
+        e.target.textContent = 'Copy failed';
+      }
+    });
+  </script>
+</body>
+</html>
